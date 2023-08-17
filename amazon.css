@@ -62,8 +62,9 @@ span.location-info{
     border: none;
     border-left: 0.5px solid var(--amazon-dark);
     outline: none;
-    font-size: 1.5em;
+    font-size: 1.em;
     color: navy;
+    padding-left: 7px;
 }
 .search-bar button{
     color: var(--amazon-light);
@@ -145,6 +146,9 @@ span.location-info{
     cursor: pointer;
     text-decoration: underline;
 }
+.bottom-navbar p:last-child{
+    font-weight: bold;
+}
 .item{
     background-color: white;
     height: 3px;
@@ -199,6 +203,7 @@ span.location-info{
     text-align: left;
     padding-left: 25px;
 }
+
 .product:nth-child(3) img{
     height: 95px;
     object-fit: contain;
@@ -230,7 +235,7 @@ span.location-info{
     margin-bottom: 15px;
 }
 .advert img{
-    height: 200px;
+    height: 250px;
     width: 90%;
     margin: auto;
 }
@@ -241,9 +246,9 @@ span.location-info{
     border-color: var(--amazon-light);
     cursor: pointer;
     width: 80%;
-    height: 6vh;
-    font-size: 16px;
-    color: var(--amazon-dark);
+    height: 29px;
+    font-size: 13px;
+    color: #0F1111;
     font-weight: bold;
 }
 .sponsored{
