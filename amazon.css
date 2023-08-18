@@ -106,7 +106,7 @@ span.location-info{
     width: 40px;
 }
 .sign-in {
-    width: 125px;
+    width: 130px;
     padding: 0 10px;
 }
 .sign-in p{
@@ -165,9 +165,11 @@ span.location-info{
 .chevrons{
     display: flex;
     justify-content: space-between;
-    translate: 0 250%;
     width: 95%;
     margin: auto;
+}
+.chevrons:nth-child(1){
+    translate: 0 170%;
 }
 .chevrons i{
     cursor: pointer;
@@ -194,6 +196,10 @@ span.location-info{
     height: 60vh;
     padding: 10px;
 }
+.product h2, .advert h2, .section-2 h2, .section-3 h2{
+    text-align: left;
+    margin-left: 30px;
+}
 .product img{
     width: 80%;
     height: 200px;
@@ -204,7 +210,7 @@ span.location-info{
     padding-left: 25px;
 }
 
-.product:nth-child(3) img{
+.product:nth-child(3) img:not(.section-1 .product img){
     height: 95px;
     object-fit: contain;
 }
@@ -269,6 +275,169 @@ span.location-info{
     font-size: 16px;
     color: white;
 }
+.section-1{
+    background-color: white;
+    margin-top: 10px;
+}
+.section-2{
+    background-color: white;
+    margin: 10px auto 0;
+    width: 95%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.section-2 .catalogue{
+    margin: 5px auto 0;
+}
+.section-2 .catalogue img{
+    width: 15%;
+    cursor: pointer;
+}
+.section-3{
+    background-color: white;
+    margin: 50px auto 0;
+    width: 95%;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+.section-3 .catalogue{
+    margin: 5px auto 0;
+    align-items: center;
+}
+.section-3 .catalogue img{
+    width: 18%;
+    height: 300px;
+    cursor: pointer;
+}
+.section-3 .chevrons{
+    width: 95%;
+    position: absolute;
+    top: 40%;
+    left: 2.5%;
+}
+.section-3 .chevrons i{
+    color: var(--amazon-dark);
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0 0 0;
+}
+.details .link{
+    width: 8%;
+}
+.italic{
+    width: 70%;
+    font-style: italic;
+}
+.back{
+    width: 100%;
+    text-align: center;
+    background-color: #37475A;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 20px 0;
+    cursor: pointer;
+}
+.back:hover{
+    text-decoration: underline;
+    color: var(--amazon-orange);
+}
+.footer-1{
+    background-color: #232F3E;
+    color: white;
+    margin: -20px auto 0;
+    display: flex;
+    padding: 50px 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footer-1 .column{
+    width: 25%;
+}
+.footer-1 .column p{
+    font-size: 15px;
+}
+.footer-1 .column p:hover, .footer-2 .column p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.settings{
+    padding: 30px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #232F3E;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.up-down{
+    display: inline-flex;
+    flex-direction: column;
+}
+.settings p{
+    border: 1px solid white;
+    width: 150px;
+    height: 25px;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.settings p img{
+    height: 20px;
+    width: 30px;
+}
+.settings img{
+    width: 15%;
+    height: 40px;
+}
 
-
-
+.footer-2{
+    margin-top: 0.5px;
+    color: white;
+    padding: 50px 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #131A22;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 150px);
+    gap: 12px;
+    justify-content: center;
+}
+.footer-2 .column h5{
+    margin-bottom: 0;
+}
+.footer-2 .column p{
+    margin-top: 0;
+    font-size: 14px;
+    color: darkgray;
+}
+.bottom-info{
+    background-color: #131A22;
+    color: white;
+    display: flex;
+   justify-content: space-evenly;
+   padding: 50px 350px;
+   flex-wrap: wrap;
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.bottom-info span{
+    cursor: pointer;
+}
+.bottom-info span i:nth-child(1){
+    background-color: white;
+    color: blue;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+.bottom-info span i:nth-child(2){
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+.bottom-info span:hover{
+    text-decoration: underline;
+}
